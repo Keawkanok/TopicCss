@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config(
+    $font-family: 'Exo'
+);
+
+@include mat-core($custom-typography);
+
+body {
+  // background-color: #f4f3f3;
+  // background: #FBCBB0;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(148,78,179,1) 0%, rgba(251,203,176,1) 50%, rgba(252,176,69,1) 100%);
+  margin: 0;
+  app-root * {
+    font-family: 'Exo', sans-serif;
+  }
+}
+
+

@@ -1,0 +1,20 @@
+main {
+  margin-top: 20px;
+}
+.img img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  width: 1000px;
+  height: 349px;
+
+}
+.card-body {
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(148,78,179,1) 0%, rgba(251,203,176,1) 50%, rgba(252,176,69,1) 100%);
+}
