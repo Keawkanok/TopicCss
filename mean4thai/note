@@ -1,15 +1,25 @@
 *** install UI ***
+
 npm install @angular/cdk --save
 
 npm install angular-bootstrap-md --save
 
+npm install -–save chart.js@2.5.0 @types/chart.js @fortawesome/fontawesome-free hammerjs animate.css
+
+---------------------------------------------------
+
+*** app.modules.ts  ***
 import { NgModule } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 @NgModule({
     imports: [
         MDBBootstrapModule.forRoot()
     ]
 });
+-----------------------------------------------------
+
+*** angular.json ***
 
 "styles": [
     "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
@@ -27,4 +37,4 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 ],
 
 
-npm install -–save chart.js@2.5.0 @types/chart.js @fortawesome/fontawesome-free hammerjs animate.css
+
