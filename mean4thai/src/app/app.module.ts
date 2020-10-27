@@ -18,13 +18,14 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BookComponent } from './book/book.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
+import { SearchComponent } from './search/search.component';
 export function appInitializerFactory(authService: AuthService) {
   return () => authService.checkTheUserOnTheFirstLoad();
 }
 
 @NgModule({
   imports: [BrowserAnimationsModule, HttpClientModule, SharedModule, AppRoutingModule, MDBBootstrapModule.forRoot()],
-  declarations: [AppComponent, HeaderComponent, HomeComponent, HeroComponent, BookComponent, HomepageComponent, EditprofileComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, HeroComponent, BookComponent, HomepageComponent, EditprofileComponent, SearchComponent],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

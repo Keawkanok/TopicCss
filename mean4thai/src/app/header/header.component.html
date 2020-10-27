@@ -1,11 +1,11 @@
 <header>
   <mat-toolbar color="primary">
-    <a routerLink="/" class="logo"></a>
+    <a routerLink="/" class="logo"><img class="logos" src="../../assets/img/Novel_Share_2.png" alt=""></a>
     <span class="example-spacer"></span>
-    <a class="links side" routerLink="/">Home</a>
-    <a class="links side" routerLink="/Editprofile">Profile</a>
+    <a class="links side" routerLink="/"><i class="fas fa-home"></i>Home</a>
+    <a class="links side" routerLink="/Editprofile"><i class="fas fa-address-card"></i>Profile</a>
 
-    <a class="links side" routerLink="/auth/login" *ngIf="!user">Login</a>
+    <a class="links side" routerLink="/auth/login" *ngIf="!user"><i class="fas fa-sign-in-alt"></i>Login</a>
     <div>
       <a class="links side" *ngIf="user" [matMenuTriggerFor]="menu">
         <mat-icon>account_circle</mat-icon>{{ user.fullname }}

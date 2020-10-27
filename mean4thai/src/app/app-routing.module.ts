@@ -10,26 +10,29 @@ import { BookComponent } from './book/book.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    component: HomeComponent,
-    //canActivate: [AuthGuard],
-  },
-  {
-    path: 'hero',
-    component: HeroComponent,
-  },
+  // {
+  //   path: 'home',
+  //   component: HomeComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // {
+  //   path: 'hero',
+  //   component: HeroComponent,
+  // },
   {
     path: '',
     component: HomepageComponent,
+  //   canActivate: [AuthGuard],
   },
   {
     path: 'Book',
     component: BookComponent,
+  //   canActivate: [AuthGuard],
   },
   {
     path: 'Editprofile',
     component: EditprofileComponent,
+  //   canActivate: [AuthGuard],
   },
   {
     path: 'auth',
